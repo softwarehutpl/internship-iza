@@ -39,7 +39,10 @@ module.exports = function (env) {
             loader: "sass-loader" // compiles Sass to CSS
           }]
         },
-
+           {
+        test: /\.css$/,
+        use: [ 'style-loader', 'postcss-loader' ]
+      },
         /* {
           test: /\.less$/,
           use: ExtractTextPlugin.extract({
@@ -65,11 +68,17 @@ module.exports = function (env) {
         allChunks: true,
         disable: env === 'dev',
       }),
+      
       new HtmlPlugin({
         template: SRC_DIR + '/index.html',
       }),
-      new webpack.NamedModulesPlugin(),
 
+      new webpack.NamedModulesPlugin(),
+      
+      new ExtractTextPlugin({
+			filename: "style.css",
+			allChunks: true
+		}),
       new webpack.ProvidePlugin({ // inject ES5 modules as global vars
         $: 'jquery',
         jQuery: 'jquery',
