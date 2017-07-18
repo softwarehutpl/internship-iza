@@ -14,3 +14,24 @@ body {
        
     }
 }
+.tail {
+    border: 1px solid #c0c0c0;
+    border-bottom: 0px;
+    
+}
+
+.line {
+    margin: 10px;
+    &--dotted {
+    border-top: 5px dotted silver;
+}
+    &--solid {
+    border-top: 5px solid #808080;
+
+}
+.header--footer {
+    color: #ffffff;
+}
+
+
+}
