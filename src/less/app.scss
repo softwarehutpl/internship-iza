@@ -9,5 +9,8 @@ body {
 .background {
     background-image: url("/src/assets/header-bg.png");
     background-repeat: repeat;
-    
+    &__content {
+        background-color: #ffffff;
+       
+    }
 }

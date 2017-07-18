@@ -31,6 +31,14 @@ module.exports = function (env) {
         },
         {
           test: /\.scss$/,
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: ['css-loader', 'sass-loader']
+          })
+        },
+        /*
+        {
+          test: /\.scss$/,
           use: [{
             loader: "style-loader" // creates style nodes from JS strings
           }, {
@@ -38,7 +46,7 @@ module.exports = function (env) {
           }, {
             loader: "sass-loader" // compiles Sass to CSS
           }]
-        },
+        }, */
            {
         test: /\.css$/,
         use: [ 'style-loader', 'postcss-loader' ]
@@ -75,10 +83,6 @@ module.exports = function (env) {
 
       new webpack.NamedModulesPlugin(),
       
-      new ExtractTextPlugin({
-			filename: "style.css",
-			allChunks: true
-		}),
       new webpack.ProvidePlugin({ // inject ES5 modules as global vars
         $: 'jquery',
         jQuery: 'jquery',
