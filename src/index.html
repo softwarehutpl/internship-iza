@@ -64,7 +64,7 @@
             </div>
 
             <div class="offset-md-2 col-md-4 col-lg-4">
-              <div class="main-photo"><img src="/src/assets/slider-image.png" alt=""></div>
+              <div class="main-photo"><img src="/src/assets/slider-image.png" alt=""/></div>
             </div>
 
 
@@ -75,10 +75,10 @@
           </div>
         </div>
       </header>
-
-      <div class="container-fluid background background__content">
+      
+      <div class="container-fluid">
         <main>
-          <div class="container ">
+          <div class="container-fluid background background__content">
             <!--tails content -->
             <section>
               <div class="row">
@@ -104,7 +104,7 @@
                   <a href="#">Read more</a>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-3 tail">
+                <div class="col-sm-12 col-md-6 col-lg-3 tail hidden-sm-down">
                   <h5>Follow Me On Twitter</h5>
                   <p>Occaecat consectetur nisi enim esse anim excepteur. Ex sunt aliqua ex laboris sint irure mollit sit laboris
                     exercitation anim ea. Velit labore nulla excepteur reprehenderit cupidatat ad cupidatat aliqua et non
@@ -115,7 +115,7 @@
                   <a href="#">Read more</a>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-3 tail">
+                <div class="col-sm-12 col-md-6 col-lg-3 tail hidden-sm-down">
                   <h5>Feel Free To Contact</h5>
                   <p>Occaecat consectetur nisi enim esse anim excepteur. Ex sunt aliqua ex laboris sint irure mollit sit laboris
                     exercitation anim ea. Velit labore nulla excepteur reprehenderit cupidatat ad cupidatat aliqua et non
@@ -128,7 +128,7 @@
               </div>
             </section>
 
-            <!-- recent work -->
+            <!-- Recent work -->
             <section>
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
@@ -143,24 +143,20 @@
                     veniam eu amet laboris anim sit. Sint excepteur sunt id proident ullamco ipsum dolore reprehenderit ea.
                     Exercitation deserunt ad mollit commodo minim pariatur ipsum officia anim ut.</p>
                 </div>
+                <!-- Pictures of recent work -->
+                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent0.png`)}" class=""/ alt=""/></div>
+                <div class="col-sm-12 col-md-6 col-lg-3 hidden-md-down"><img src="${require(`assets/img-recent1.png`)}" class= alt=""/></div>
+                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent2.png`)}" class= alt=""/></div>
 
-                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent0.png`)}" class="" alt=""></div>
-                <div class="col-sm-12 col-md-6 col-lg-3 hidden"><img src="${require(`assets/img-recent1.png`)}" class="img-responsive" alt=""></div>
-                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent2.png`)}" class="img-responsive" alt=""></div>
-
-                <div class="col-sm-12 col-md-6 col-lg-3 hidden"></div>
-                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent4.png`)}" class="img-responsive" alt=""></div>
-                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent3.png`)}" class="img-responsive" alt=""></div>
-                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent5.png`)}" class="img-responsive" alt=""></div>
+                <div class="col-sm-12 col-md-6 col-lg-3 hidden-md-down"></div>
+                <div class="col-sm-12 col-md-6 col-lg-3"><img src="${require(`assets/img-recent4.png`)}" class= alt=""/></div>
+                <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm-down"><img src="${require(`assets/img-recent3.png`)}" class= alt=""/></div>
+                <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm-down"><img src="${require(`assets/img-recent5.png`)}" class= alt=""/></div>
               </div>
             </section>
           </div>
-
-
-      </div>
-
+<!-- section 3 - About, Recent Posts, Widgets -->
       <section>
-
         <div class="row">
           <div class="col-md-6 col-lg-3">
             <h5 class="header--footer">About Portfolio</h5>
@@ -170,6 +166,7 @@
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet
               laborum ipsum. </p>
           </div>
+
           <div class="col-md-6 col-lg-3">
             <h5>Recent Posts</h5>
             <div class="line--solid"></div>
@@ -179,7 +176,8 @@
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
           </div>
-          <div class="col-md-6 col-lg-3 ">
+
+          <div class="col-md-6 col-lg-3 hidden-sm-down">
             <h5>Twitter Widget</h5>
             <div class="line--solid"></div>
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
@@ -188,32 +186,34 @@
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
+
+          <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm-down">
             <h5>Flickr Widget</h5>
             <div class="line--solid"></div>
-            <img src="${require(`assets/rect.png`)}" alt="" class="img-responsive">
-            <img src="${require(`assets/rect.png`)}" alt="">
-            <img src="${require(`assets/rect.png`)}" alt="">
-            <img src="${require(`assets/rect.png`)}" alt="">
+            <img src="${require(`assets/rect.png`)}" alt=""/>
+            <img src="${require(`assets/rect.png`)}" alt=""/>
+            <img src="${require(`assets/rect.png`)}" alt=""/>
+            <img src="${require(`assets/rect.png`)}" alt=""/>
             <br>
-            <img src="${require(`assets/rect.png`)}" alt="">
-            <img src="${require(`assets/rect.png`)}" alt="">
-            <img src="${require(`assets/rect.png`)}" alt="">
-            <img src="${require(`assets/rect.png`)}" alt="">
+            <img src="${require(`assets/rect.png`)}" alt=""/>
+            <img src="${require(`assets/rect.png`)}" alt=""/>
+            <img src="${require(`assets/rect.png`)}" alt=""/>
+            <img src="${require(`assets/rect.png`)}" alt=""/>
           </div>
         </div>
       </section>
       </main>
+    </div>
 
-      <footer>
+      <footer class=""/>
         <div class="container background__main">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-2">
               <img src="${require(`assets/logo.png`)}" alt="logo">
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <p>Fugiat ex voluptate occaecat sit culpa cupidatat.</p>
-              <p>Esse esse voluptate consectetur irure magna mollit qui et aute reprehenderit anim incididunt.</p>
+              <p>Fugiat ex voluptate occaecat sit culpa cupidatat.
+              Esse esse voluptate consectetur irure magna mollit qui.</p>
             </div>
   
           </div>

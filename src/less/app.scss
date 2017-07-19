@@ -1,63 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
 @import "~bootstrap/scss/bootstrap.scss";
-
 body {
     font-family: Lato, Arial, Helvetica, sans-serif;
-
 }
 
 .background {
-
-    &__main { 
-    background-image: url("/src/assets/header-bg.png");
-    background-repeat: repeat;
-    color: white;
-    margin: 0;
-
-}
+    &__main {
+        background-image: url("/src/assets/header-bg.png");
+        background-repeat: repeat;
+        color: white;
+        margin: 0;
+    }
     &__content {
         background-color: #ffffff;
-        color: #6e6e6e;
-        margin: -15px -15px 40px -15px;
+        color: #6e6e6e; // margin: -15px -15px 40px -15px;
     }
 }
+
 .tail {
     border: 1px solid #c0c0c0;
     border-bottom: 0px;
-    
 }
 
 .line {
     margin: 10px;
     &--dotted {
-    border-top: 5px dotted silver;
-}
+        border-top: 5px dotted silver;
+    }
     &--solid {
-    border-top: 1px solid #808080;
-
+        border-top: 1px solid #808080;
+        margin: 20px 0 10px 0;
+    }
+    .header--footer {
+        color: #ffffff;
+    }
 }
-.header--footer {
-    color: #ffffff;
-}
-
-}
-
-
-
-// Example usage:
+/*
 @include media-breakpoint-up(sm) {
-  .hidden-sm {
-    display: none;
-  }
+    .hidden--sm {
+        display: none;
+    }
 }
+
 @include media-breakpoint-up(md) {
-  .hidden {
-    display: none;
-  }
+    .hidden--md {
+        display: none;
+    }
 }
+
 @include media-breakpoint-up(lg) {
-  .hidden {
-    display: inline-block;
-  }
+    .hidden {
+        &--sm {
+            display:inline-block;
+        }
+        &--md {
+            display: inline-block;
+        }
+        &--lg {
+            display: inline-block;
+        }
+    }
 }
+*/
