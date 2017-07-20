@@ -20,7 +20,7 @@ p {
 
 .background {
     &__main {
-        background-image: url("/src/assets/header-bg.png");
+        background-image: url('~assets/header-bg.png');
         background-repeat: repeat;
         color: white;
         padding-top: 10px;
@@ -30,23 +30,58 @@ p {
         color: #6e6e6e; //margin: -15px -15px 40px -15px;
     }
 }
-
+.main-photo {
+   position: absolute;
+    margin-top: 100px;
+}
 .tail {
     border: 1px solid #c0c0c0;
     border-bottom: 0px;
 }
 
-.line {
-    margin: 10px;
-    &--dotted {
-        border-top: 5px dotted silver;
+.stripe {
+    height: 12px;
+    background: repeating-linear-gradient( -50deg, #cecece, #cecece 2px, #fff 2px, #fff 5px);
+    &--tails {
+        width: 90%;
+        margin-bottom: 10px;
     }
+}
+
+.line {
     &--solid {
         border-top: 1px solid #808080;
-        margin: 20px 0 10px 0;
+        margin: 20px 0 25px 0;
     }
     .header--footer {
         color: #ffffff;
+    }
+}
+.nav__form {
+    border: opx solid #ccc;
+    border-radius: 122px;;
+    box-shadow: inset -5px 8px 5px -6px rgba(0,0,0,0.56);
+    background-color:#2f2f2f;
+    background-image: url('~assets/search-13-24.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+   
+}
+.widget {
+    &__image {
+        margin: 7px;
+    }
+}
+
+.container-fluid--custom {
+    padding-left: -15px !important;
+    padding-right: -15px !important;
+}
+
+.footer {
+    &__background--color {
+        opacity: 0.3;
     }
 }
 
@@ -57,10 +92,16 @@ p {
     .tail {
         margin-top: -32px;
     }
-     .recent__picture {
+    .recent__picture {
+        &--bottom--space {
+            margin-bottom: 28px;
+        }
         &--top--space {
             margin-top: 35px;
         }
+    }
+    .logo--align--sm {
+        text-align: center;
     }
 }
 
@@ -78,6 +119,9 @@ p {
     }
     .recent__picture {
         &--bottom--space {
+            margin-bottom: 27px;
+        }
+        &--bottom--space--down {
             margin-bottom: 100px;
         }
         &--top--space {
@@ -102,22 +146,5 @@ p {
         &--top--space {
             margin-top: 32px;
         }
-    }
-}
-
-.widget {
-    &__image {
-        margin: 7px;
-    }
-}
-
-.container-fluid--custom {
-    padding-left: -15px !important;
-    padding-right: -15px !important;
-}
-
-.footer {
-    &__background--color {
-        opacity: 0.3;
     }
 }

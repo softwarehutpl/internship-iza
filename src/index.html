@@ -39,7 +39,7 @@
               </ul>
               <div class="col-md-6 col-lg-4">
                 <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-md-2" type="text" placeholder="Search" />
+                  <input class="form-control mr-md-2 nav__form"  placeholder="" />
                 </form>
               </div>
             </div>
@@ -51,7 +51,7 @@
       <header>
         <div class="container">
           <div class="row">
-            <div class="col-md-10 col-lg-5">
+            <div class="col-md-10 col-lg-6">
               <h1 class="main-header">Portfolio Website Theme: Perfect for Anyone</h1>
               <p>Nulla id anim id non enim magna incididunt laboris nisi esse et aliquip laborum. Ad laborum tempor dolore minim.
                 Nulla consequat tempor proident deserunt non exercitation tempor labore eu velit. Ad quis eu adipisicing
@@ -62,14 +62,14 @@
               </p>
             </div>
 
-            <div class="offset-md-2 col-md-4 col-lg-5">
+            <div class="offset-md-4 col-md-6 offset-lg-0 col-lg-6">
               <div class="main-photo"><img src="/src/assets/slider-image.png" alt="" /></div>
             </div>
 
-            <div class="col-md-12 col-lg-2">
+            <div class="col-md-12 col-lg-12">
               <button type="button" class="btn btn-secondary btn-md active">See Our Work</button>
             </div>
-            <div class="col-lg-12 extra-spacing"></div>
+            <div class="col-sm-12 col-md-12 col-lg-12 extra-spacing"></div>
           </div>
         </div>
       </header>
@@ -88,7 +88,7 @@
                   fugiat proident deserunt. Irure ad eiumd od magna ut nisi officia cillum nulla. Reprehenderit amet sunt
                   cillum nisi cillum nostrud aliqua tempor proident ea elit velit sint. Quis ea culpa consectetur irure.
                 </p>
-                <div class="line--dotted"></div>
+                <div class="stripe stripe--tails"></div>
                 <a href="#">Read more</a>
               </div>
 
@@ -99,7 +99,7 @@
                   fugiat proident deserunt. Irure ad eiumd od magna ut nisi officia cillum nulla. Reprehenderit amet sunt
                   cillum nisi cillum nostrud aliqua tempor proident ea elit velit sint. Quis ea culpa consectetur irure.
                 </p>
-                <div class="line--dotted"></div>
+                <div class="stripe stripe--tails"></div>
                 <a href="#">Read more</a>
               </div>
 
@@ -108,9 +108,9 @@
                 <p>Occaecat consectetur nisi enim esse anim excepteur. Ex sunt aliqua ex laboris sint irure mollit sit laboris
                   exercitation anim ea. Velit labore nulla excepteur reprehenderit cupidatat ad cupidatat aliqua et non enim
                   fugiat proident deserunt. Irure ad eiumd od magna ut nisi officia cillum nulla. Reprehenderit amet sunt
-                  cillum nisi cillum nostrud aliqua tempor proident ea elit velit sint. Quis ea culpa consectetur irure.
+                  cillum nisi cillum nostrud aliqua tempor proident ea elit velit  sint. Quis ea culpa consectetur irure.
                 </p>
-                <div class="line--dotted"></div>
+                <div class="stripe stripe--tails"></div>
                 <a href="#">Read more</a>
               </div>
 
@@ -121,7 +121,7 @@
                   fugiat proident deserunt. Irure ad eiumd od magna ut nisi officia cillum nulla. Reprehenderit amet sunt
                   cillum nisi cillum nostrud aliqua tempor proident ea elit velit sint. Quis ea culpa consectetur irure.
                 </p>
-                <div class="line--dotted"></div>
+                <div class="stripe stripe--tails"></div>
                 <a href="#">Read more</a>
               </div>
             </div>
@@ -132,7 +132,7 @@
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12">
                 <h5>Recent work</h5>
-                <div class="line--dotted"></div>
+                <div class="stripe"></div>
               </div>
             </div>
 
@@ -144,24 +144,26 @@
               </div>
 
               <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                <img src="${require(`assets/img-recent0.png`)}" class="rounded recent__picture--top--space" / alt="" />
+                <img src="${require(`assets/img-recent0.png`)}" class="rounded recent__picture--bottom--space recent__picture--top--space"
+                / alt="" />
               </div>
               <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-md-down">
                 <img src="${require(`assets/img-recent1.png`)}" class="rounded recent__picture--top--space" alt="" />
               </div>
               <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                <img src="${require(`assets/img-recent2.png`)}" class="rounded recent__picture--top--space" alt="" />
+                <img src="${require(`assets/img-recent2.png`)}" class="rounded recent__picture--top--space recent__picture--bottom--space"
+                  alt="" />
               </div>
 
               <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-md-down"></div>
               <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                <img src="${require(`assets/img-recent4.png`)}" class="rounded" alt="" />
+                <img src="${require(`assets/img-recent4.png`)}" class="recent__picture--bottom--space rounded" alt="" />
               </div>
               <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down">
-                <img src="${require(`assets/img-recent3.png`)}" class="rounded recent__picture--bottom--space" alt="" />
+                <img src="${require(`assets/img-recent3.png`)}" class="rounded recent__picture--bottom--space--down" alt="" />
               </div>
               <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down">
-                <img src="${require(`assets/img-recent5.png`)}" class="rounded recent__picture--bottom--space" alt="" />
+                <img src="${require(`assets/img-recent5.png`)}" class="rounded recent__picture--bottom--space--down" alt="" />
               </div>
             </div>
           </section>
@@ -197,7 +199,6 @@
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet
               laborum ipsum. </p>
             <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm-down">
@@ -227,10 +228,10 @@
     <footer class="">
       <div class="container background__main footer__background--color">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-2 text-center">
+          <div class="col-sm-12 col-md-6 col-lg-2 logo--align--sm">
             <img src="${require(`assets/logo.png`)}" alt="logo">
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-5 text-center">
+          <div class="col-sm-12 col-md-6 col-lg-5 logo--align--sm">
             <p>Fugiat ex voluptate occaecat sit culpa cupidatat. Esse esse voluptate consectetur irure magna mollit.</p>
           </div>
         </div>
