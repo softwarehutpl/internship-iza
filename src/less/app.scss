@@ -4,16 +4,30 @@ body {
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 35px;
+}
+
 .background {
     &__main {
         background-image: url("/src/assets/header-bg.png");
         background-repeat: repeat;
         color: white;
-        margin: 0;
+        padding-top: 10px;
     }
     &__content {
         background-color: #ffffff;
-        color: #6e6e6e; // margin: -15px -15px 40px -15px;
+        color: #6e6e6e; //margin: -15px -15px 40px -15px;
     }
 }
 
@@ -35,30 +49,75 @@ body {
         color: #ffffff;
     }
 }
-/*
+
 @include media-breakpoint-up(sm) {
-    .hidden--sm {
-        display: none;
+    .extra-spacing {
+        height: 72px;
+    }
+    .tail {
+        margin-top: -32px;
+    }
+     .recent__picture {
+        &--top--space {
+            margin-top: 35px;
+        }
     }
 }
 
 @include media-breakpoint-up(md) {
-    .hidden--md {
-        display: none;
+    .extra-spacing {
+        height: 102px;
+    }
+    .tail {
+        margin-top: -69px;
+        flex: 0 0 48%;
+        max-width: 49%;
+        &--md {
+            margin-top: 30px;
+        }
+    }
+    .recent__picture {
+        &--bottom--space {
+            margin-bottom: 100px;
+        }
+        &--top--space {
+            margin-top: 32px;
+        }
     }
 }
 
 @include media-breakpoint-up(lg) {
-    .hidden {
-        &--sm {
-            display:inline-block;
+    .extra-spacing {
+        height: 142px;
+    }
+    .tail {
+        margin-top: -60px;
+        flex: 0 0 23%;
+        max-width: 25%;
+    }
+    .recent__picture {
+        &--bottom--space {
+            margin-bottom: 50px;
         }
-        &--md {
-            display: inline-block;
-        }
-        &--lg {
-            display: inline-block;
+        &--top--space {
+            margin-top: 32px;
         }
     }
 }
-*/
+
+.widget {
+    &__image {
+        margin: 7px;
+    }
+}
+
+.container-fluid--custom {
+    padding-left: -15px !important;
+    padding-right: -15px !important;
+}
+
+.footer {
+    &__background--color {
+        opacity: 0.3;
+    }
+}
