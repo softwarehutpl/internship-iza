@@ -84,6 +84,32 @@ p {
         opacity: 0.3;
     }
 }
+.img--hoovered {
+    position: relative;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.img--hoovered:hover span.text-content {
+  opacity: 1;
+}
+
+
 
 @include media-breakpoint-up(sm) {
     .extra-spacing {
