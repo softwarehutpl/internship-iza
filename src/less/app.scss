@@ -30,10 +30,7 @@ p {
         color: #6e6e6e; //margin: -15px -15px 40px -15px;
     }
 }
-.main-photo {
-   position: absolute;
-    margin-top: 100px;
-}
+
 .tail {
     border: 1px solid #c0c0c0;
     border-bottom: 0px;
@@ -84,47 +81,65 @@ p {
         opacity: 0.3;
     }
 }
-.img--hoovered {
+.img{
+    &--hoovered {
     position: relative;
+    width: 100%;
+    height: 100%;
+    
+    &__loupe--position {
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY(90%);
+    }
 }
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 200px;
-  position: absolute;
-  top: 0;
-  width: 200px;
-  opacity: 0;
-  transition: opacity 500ms;
 }
 
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color:#ffffff;
+  cursor: pointer;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 500ms;
+    img {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+} 
+
 .img--hoovered:hover span.text-content {
   opacity: 1;
 }
 
+.full-image {
+    width: 100%;
+    height: auto;
+}
 
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(xs) {
+    .main-photo {
+        position: absolute;
+        margin-top: -21%;
+        opacity: 0.2;
+        transform: translateX(64%);
+         &--size-sm {
+            width: 50%;
+        }
+    }
     .extra-spacing {
         height: 72px;
     }
     .tail {
         margin-top: -32px;
-    }
-    .recent__picture {
-        &--bottom--space {
-            margin-bottom: 28px;
-        }
-        &--top--space {
-            margin-top: 35px;
-        }
     }
     .logo--align--sm {
         text-align: center;
@@ -132,6 +147,15 @@ span.text-content span {
 }
 
 @include media-breakpoint-up(md) {
+    .main-photo {
+        position: relative;
+        margin-top: -10%;
+        opacity: 1;
+        transform: initial;
+         &--size-sm {
+            width: 100%;
+        }
+    }
     .extra-spacing {
         height: 102px;
     }
@@ -143,20 +167,19 @@ span.text-content span {
             margin-top: 30px;
         }
     }
-    .recent__picture {
-        &--bottom--space {
-            margin-bottom: 27px;
-        }
-        &--bottom--space--down {
-            margin-bottom: 100px;
-        }
-        &--top--space {
-            margin-top: 32px;
-        }
-    }
+  
 }
 
 @include media-breakpoint-up(lg) {
+    .main-photo {
+    position: absolute;
+    margin-top: 100px;
+    opacity: 1;
+    transform: inherit
+    }
+    &--size-sm {
+            width: 100%;
+        }
     .extra-spacing {
         height: 142px;
     }
@@ -164,13 +187,5 @@ span.text-content span {
         margin-top: -60px;
         flex: 0 0 23%;
         max-width: 25%;
-    }
-    .recent__picture {
-        &--bottom--space {
-            margin-bottom: 50px;
-        }
-        &--top--space {
-            margin-top: 32px;
-        }
     }
 }
