@@ -132,7 +132,7 @@ span.text-content {
         opacity: 0.2;
         transform: translateX(64%);
          &--size-sm {
-            width: 50%;
+            width: 60%;
         }
     }
     .extra-spacing {
@@ -140,6 +140,9 @@ span.text-content {
     }
     .tail {
         margin-top: -32px;
+         &--sm {
+            margin-top: 30px;
+        }
     }
     .logo--align--sm {
         text-align: center;
@@ -187,5 +190,6 @@ span.text-content {
         margin-top: -60px;
         flex: 0 0 23%;
         max-width: 25%;
+        
     }
 }
