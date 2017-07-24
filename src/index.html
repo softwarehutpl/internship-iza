@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="container-fluid container-fluid--custom background background__main">
+  <div class="container-fluid no-gutters background background__main">
     <!-- logo, nav and search -->
     <div class="container background background__main">
       <div class="row">
@@ -78,7 +78,7 @@
                       <div class="carousel-item carousel-block">
                         <img class="" src="${require(`assets/slider-image.png`)}" alt="Third slide">
                       </div>
-                      <!--    <div class="main-photo"><img src="/src/assets/slider-image.png" class="main-photo--size-sm" alt="" /></div> -->
+                    
                     </div>
                   </div>
 
@@ -87,7 +87,7 @@
               </div>
               <div class="row">
                 <div class="col-lg-12">
-                  <ol class="carousel-indicators ">
+                  <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -97,11 +97,10 @@
 
             </div>
           </div>
-          <div class="row" style="margin-bottom: 90px;">
+          <div class="row extra-spacing">
             <div class="col-md-12 col-lg-12">
               <button type="button" id="btn-onoff" class="btn btn-secondary btn-md active">On/Off</button>
             </div>
-            <!-- <div class="col-sm-12 col-md-12 col-lg-12 extra-spacing"></div> -->
           </div>
         </div>
       </header>
@@ -177,254 +176,157 @@
 
               <div class="col-sm-12 col-md-6 col-lg-9">
                 <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-4" style="margin-bottom: 30px;">
+                  <div class="col-sm-12 col-md-6 col-lg-4 pictures__wrapper">
                     <div class="img--hoovered">
                       <img src="${require(`assets/img-recent0.png`)}" class="full-image" alt="" />
                       <span class="text-content full-image">
-
-                                    <div>
-                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
-                                    </div>
-
-                                    <div style="position: absolute; bottom: 0px; width: 100%">
-                                        <div style="width: 30%; display: inline-block; text-align: left;">
-                                            <span style="display: block">
-                                                201
-                                            </span>
-                      <span style="display: block">
-                                                Views
-                                            </span>
-                    </div>
-
-                    <div style="width: 30%; display: inline-block; text-align: left;">
-                      <span style="display: block">
-                                                95
-                                            </span>
-                      <span style="display: block">
-                                                Likes
-                                            </span>
-                    </div>
-
-                    <div style="width: 30%; display: inline-block; text-align: left;">
-                      <span style="display: block">
-                                                10
-                                            </span>
-                      <span style="display: block">
-                                                Comments
-                                            </span>
-                    </div>
-                    <!--<span class="text-content--position">201 Views</span>
-        <span class="text-content--position">95 Likes</span>
-        <span class="text-content--position">10 Comments</span>-->
-                  </div>
+                        <div>
+                         <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
+                        </div>
+                        <div class="pictures__wrapper__item">
+                            <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 201 </div>
+                              <div class="pictures__wrapper__item__text--details">  Views </div>
+                            </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 95 </div>
+                              <div class="pictures__wrapper__item__text--details"> Likes</div>
+                          </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 10 </div>
+                              <div class="pictures__wrapper__item__text--details"> Comments</div>
+                          </div>
+                        </div>
 
                   </span>
-                </div>
-              </div>
+                    </div>
+                  </div>
 
-              <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-md-down" style="margin-bottom: 30px;">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent1.png`)}" class="full-image " alt="" />
-                  <span class="text-content full-image">
+                  <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-md-down" class="pictures__wrapper">
+                    <div class="img--hoovered">
+                      <img src="${require(`assets/img-recent1.png`)}" class="full-image " alt="" />
+                      <span class="text-content full-image">
+                      <div>
+                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position"/>
+                      </div>
 
-                                    <div>
-                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
-                                    </div>
-
-                                    <div style="position: absolute; bottom: 0px; width: 100%">
-                                        <div style="width: 30%; display: inline-block; text-align: left;">
-                                            <span style="display: block">
-                                                201
-                                            </span>
-                  <span style="display: block">
-                                                Views
-                                            </span>
-                </div>
-
-                <div style="width: 30%; display: inline-block; text-align: left;">
-                  <span style="display: block">
-                                                95
-                                            </span>
-                  <span style="display: block">
-                                                Likes
-                                            </span>
-                </div>
-
-                <div style="width: 30%; display: inline-block; text-align: left;">
-                  <span style="display: block">
-                                                10
-                                            </span>
-                  <span style="display: block">
-                                                Comments
-                                            </span>
-                </div>
-                <!--<span class="text-content--position">201 Views</span>
-                                        <span class="text-content--position">95 Likes</span>
-                                        <span class="text-content--position">10 Comments</span>-->
-              </div>
-
+                         <div class="pictures__wrapper__item">
+                            <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 201 </div>
+                              <div class="pictures__wrapper__item__text--details">  Views </div>
+                            </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 95 </div>
+                              <div class="pictures__wrapper__item__text--details"> Likes</div>
+                          </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 10 </div>
+                              <div class="pictures__wrapper__item__text--details"> Comments</div>
+                          </div>
+                        </div>
               </span>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 text-center" style="margin-bottom: 30px;">
-          <div class="img--hoovered">
-            <img src="${require(`assets/img-recent2.png`)}" class="full-image" alt="" />
-            <span class="text-content full-image">
-                                    <div>
-                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
-                                    </div>
-
-                                    <div style="position: absolute; bottom: 0px; width: 100%">
-                                        <div style="width: 30%; display: inline-block; text-align: left;">
-                                            <span style="display: block">
-                                                201
-                                            </span>
-            <span style="display: block">
-                                                Views
-                                            </span>
-          </div>
-
-          <div style="width: 30%; display: inline-block; text-align: left;">
-            <span style="display: block">
-                                                95
-                                            </span>
-            <span style="display: block">
-                                                Likes
-                                            </span>
-          </div>
-
-          <div style="width: 30%; display: inline-block; text-align: left;">
-            <span style="display: block">
-                                                10
-                                            </span>
-            <span style="display: block">
-                                                Comments
-                                            </span>
-          </div>
-          <!--<span class="text-content--position">201 Views</span>
-        <span class="text-content--position">95 Likes</span>
-        <span class="text-content--position">10 Comments</span>-->
-        </div>
-        </span>
-    </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4 text-center" style="margin-bottom: 30px;">
-      <div class="img--hoovered">
-        <img src="${require(`assets/img-recent4.png`)}" class="full-image " alt="" />
-        <span class="text-content full-image">
-                                    <div>
-                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
-                                    </div>
-
-                                    <div style="position: absolute; bottom: 0px; width: 100%">
-                                        <div style="width: 30%; display: inline-block; text-align: left;">
-                                            <span style="display: block">
-                                                201
-                                            </span>
-        <span style="display: block">
-                                                Views
-                                            </span>
-      </div>
-
-      <div style="width: 30%; display: inline-block; text-align: left;">
-        <span style="display: block">
-                                                95
-                                            </span>
-        <span style="display: block">
-                                                Likes
-                                            </span>
-      </div>
-
-      <div style="width: 30%; display: inline-block; text-align: left;">
-        <span style="display: block">
-                                                10
-                                            </span>
-        <span style="display: block">
-                                                Comments
-                                            </span>
-      </div>
-      <!--<span class="text-content--position">201 Views</span>
-        <span class="text-content--position">95 Likes</span>
-        <span class="text-content--position">10 Comments</span>-->
-    </div>
-
-    </span>
-  </div>
-  </div>
-  <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-sm-down" style="margin-bottom: 30px;">
-    <div class="img--hoovered">
-      <img src="${require(`assets/img-recent3.png`)}" class="full-image" alt="" />
-      <span class="text-content full-image">
-
-                                    <div>
-                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
-                                    </div>
-
-                                    <div style="position: absolute; bottom: 0px; width: 100%">
-                                        <div style="width: 30%; display: inline-block; text-align: left;">
-                                            <span style="display: block">
-                                                201
-                                            </span>
-      <span style="display: block">
-                                                Views
-                                            </span>
-    </div>
-
-    <div style="width: 30%; display: inline-block; text-align: left;">
-      <span style="display: block">
-                                                95
-                                            </span>
-      <span style="display: block">
-                                                Likes
-                                            </span>
-    </div>
-
-    <div style="width: 30%; display: inline-block; text-align: left;">
-      <span style="display: block">
-                                                10
-                                            </span>
-      <span style="display: block">
-                                                Comments
-                                            </span>
-    </div>
-    <!--<span class="text-content--position">201 Views</span>
-        <span class="text-content--position">95 Likes</span>
-        <span class="text-content--position">10 Comments</span>-->
-  </div>
-
-  </span>
-  </div>
-  </div>
-  <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-sm-down" style="margin-bottom: 30px;">
-    <div class="img--hoovered">
-      <img src="${require(`assets/img-recent5.png`)}" class="full-image" alt="" />
-      <span class="text-content full-image">
-        <div>
-          <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 text-center" class="pictures__wrapper">
+                    <div class="img--hoovered">
+                      <img src="${require(`assets/img-recent2.png`)}" class="full-image" alt="" />
+                      <span class="text-content full-image">
+                        <div>
+                          <img src="${require(`assets/loupe.png`)}" class="img__loupe--position"/>
+                        </div>
+                          <div class="pictures__wrapper__item">
+                            <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 201 </div>
+                              <div class="pictures__wrapper__item__text--details">  Views </div>
+                            </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 95 </div>
+                              <div class="pictures__wrapper__item__text--details"> Likes</div>
+                          </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 10 </div>
+                              <div class="pictures__wrapper__item__text--details"> Comments</div>
+                          </div>
+                        </div>
+                  </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4 text-center" class="pictures__wrapper">
+                    <div class="img--hoovered">
+                      <img src="${require(`assets/img-recent4.png`)}" class="full-image " alt="" />
+                      <span class="text-content full-image">
+                        <div>
+                          <img src="${require(`assets/loupe.png`)}" class="img__loupe--position"/>
+                        </div>
+                          <div class="pictures__wrapper__item">
+                            <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 201 </div>
+                              <div class="pictures__wrapper__item__text--details">  Views </div>
+                            </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 95 </div>
+                              <div class="pictures__wrapper__item__text--details"> Likes</div>
+                          </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 10 </div>
+                              <div class="pictures__wrapper__item__text--details"> Comments</div>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-sm-down" class="pictures__wrapper">
+                    <div class="img--hoovered">
+                      <img src="${require(`assets/img-recent3.png`)}" class="full-image" alt="" />
+                      <span class="text-content full-image">
+                        <div>
+                          <img src="${require(`assets/loupe.png`)}" class="img__loupe--position"/>
+                        </div>
+                          <div class="pictures__wrapper__item">
+                            <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 201 </div>
+                              <div class="pictures__wrapper__item__text--details">  Views </div>
+                            </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 95 </div>
+                              <div class="pictures__wrapper__item__text--details"> Likes</div>
+                          </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 10 </div>
+                              <div class="pictures__wrapper__item__text--details"> Comments</div>
+                          </div>
+                        </div>
+                      </span>
+                </div>
               </div>
-         <div style="position: absolute; bottom: 0px; width: 100%">
-      <div style="width: 30%; display: inline-block; text-align: left;">
-      <span style="display: block">201
-      </span>
-      <span style="display: block">Views</span>
+              <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-sm-down" class="pictures__wrapper">
+                <div class="img--hoovered">
+                  <img src="${require(`assets/img-recent5.png`)}" class="full-image" alt="" />
+                      <span class="text-content full-image">
+                        <div>
+                          <img src="${require(`assets/loupe.png`)}" class="img__loupe--position"/>
+                        </div>
+                          <div class="pictures__wrapper__item">
+                            <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 201 </div>
+                              <div class="pictures__wrapper__item__text--details">  Views </div>
+                            </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 95 </div>
+                              <div class="pictures__wrapper__item__text--details"> Likes</div>
+                          </div>
+                          <div class="pictures__wrapper__item__text">
+                              <div class="pictures__wrapper__item__text--details"> 10 </div>
+                              <div class="pictures__wrapper__item__text--details"> Comments</div>
+                          </div>
+                        </div>
+                      </span>
+                </div>
+              </div>
+        </div>
     </div>
-    <div style="width: 30%; display: inline-block; text-align: left;">
-      <span style="display: block"> 95</span>
-      <span style="display: block">Likes</span>
-    </div>
-    <div style="width: 30%; display: inline-block; text-align: left;">
-      <span style="display: block">10</span>
-      <span style="display: block"> Comments</span>
-    </div>
-  </div>
-
-  </span>
-  </div>
-  </div>
-  </div>
-  </div>
 
 
   </div>
@@ -485,6 +387,9 @@
 
   </section>
   </main>
+
+
+
   <!--footer -->
   <footer class="">
     <div class="container background__main footer__background--color">
@@ -498,22 +403,9 @@
       </div>
     </div>
 
-    
+
   </footer>
   </div>
-<!-- nie dziala -->
-  <script src="/dist/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
-  <script>
-
-    $('#btn-onoff').on('click', function () {
-      $('#carouselExampleIndicators').carousel('pause');
-      
-    });
-  </script>
 </body>
 
 </html>
