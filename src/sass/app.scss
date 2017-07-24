@@ -144,7 +144,7 @@ p {
             position: absolute;
         }
 
-span.text-content {
+div.text-content {
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     cursor: pointer;
@@ -155,14 +155,9 @@ span.text-content {
     top: 0;
     opacity: 0;
     transition: opacity 500ms;
-    img {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-    }
 }
 
-.img--hoovered:hover span.text-content {
+.img--hoovered:hover div.text-content {
     opacity: 1;
 }
 
@@ -194,11 +189,9 @@ span.text-content {
     .logo--align--sm {
         text-align: center;
     }
-       .carousel-indicators {
+    .carousel-indicators {
         visibility: hidden;
-        
-    } 
-   
+    }   
 }
 
 @include media-breakpoint-up(md) {
@@ -206,9 +199,7 @@ span.text-content {
         position: relative;
         margin-top: 0px;
         right: 50px;
-        opacity: 1;
-        
-        
+        opacity: 1;   
     }
     .extra-spacing {
         height: 102px;
@@ -225,8 +216,8 @@ span.text-content {
         position: absolute;
         bottom: -58px;
         justify-content: flex-end;
-       visibility: visible;
-       margin: 0;
+        visibility: visible;
+        margin: 0;
     } 
 }
 

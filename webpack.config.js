@@ -36,28 +36,12 @@ module.exports = function (env) {
             use: ['css-loader', 'sass-loader']
           })
         },
-        /*
-        {
-          test: /\.scss$/,
-          use: [{
-            loader: "style-loader" // creates style nodes from JS strings
-          }, {
-            loader: "css-loader" // translates CSS into CommonJS
-          }, {
-            loader: "sass-loader" // compiles Sass to CSS
-          }]
-        }, */
+     
            {
         test: /\.css$/,
         use: [ 'style-loader', 'postcss-loader' ]
       },
-        /* {
-          test: /\.less$/,
-          use: ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: ['css-loader', 'less-loader'],
-          })
-        }, */
+   
         {
           test: /\.(jpg|png|svg)$/,
           use: [{

@@ -1,6 +1,6 @@
 import 'html-loader?interpolate!./index.html';
 
-import './less/app.scss';
+import './sass/app.scss';
 
 import 'jquery';
 
