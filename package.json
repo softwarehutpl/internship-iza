@@ -30,6 +30,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "webpack-hot-middleware": "^2.18.2"
   }
 }

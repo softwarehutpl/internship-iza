@@ -11,7 +11,9 @@
   <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+  <![endif]-->
+
+
 </head>
 
 <body>
@@ -37,11 +39,11 @@
                 <li class="nav__item"> <a class="nav-link--color" href="#">Archives</a></li>
                 <li class="nav__item"><a class="nav-link--color" href="#">Contact</a></li>
               </ul>
-              <div class="col-md-6 col-lg-4">
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-md-2 nav__form__search" placeholder="" />
-                </form>
-              </div>
+
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-md-2 nav__form__search" placeholder="" />
+              </form>
+
             </div>
           </nav>
         </div>
@@ -61,35 +63,45 @@
                 </p>
               </p>
             </div>
+            <div class="col-sm-12 offset-md-4 col-md-8 col-lg-6 offset-lg-0">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-            <div class="col-sm-12 offset-md-4 col-md-6 offset-lg-0 col-lg-6">
-              <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-                <ol class="carousel-indicators carousel-block">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner main-photo" role="listbox">
-                  <div class="carousel-item active">
-                    <img class="d-block img-fluid main-photo--size-sm" src="${require(`assets/slider-image.png`)}" alt="First slide">
+                    <div class="carousel-inner main-photo" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="" src="${require(`assets/slider-image.png`)}" alt="First slide">
+                      </div>
+                      <div class="carousel-item carousel-block">
+                        <img class="" src="${require(`assets/slider-image.png`)}" alt="Second slide">
+                      </div>
+                      <div class="carousel-item carousel-block">
+                        <img class="" src="${require(`assets/slider-image.png`)}" alt="Third slide">
+                      </div>
+                      <!--    <div class="main-photo"><img src="/src/assets/slider-image.png" class="main-photo--size-sm" alt="" /></div> -->
+                    </div>
                   </div>
-                  <div class="carousel-item carousel-block">
-                    <img class="d-block img-fluid main-photo--size-sm" src="${require(`assets/slider-image.png`)}" alt="Second slide">
-                  </div>
-                  <div class="carousel-item carousel-block">
-                    <img class="d-block img-fluid main-photo--size-sm" src="${require(`assets/slider-image.png`)}" alt="Third slide">
-                  </div>
-                  <!-- <div class="main-photo"><img src="/src/assets/slider-image.png" class="main-photo--size-sm"alt="" /></div> -->
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <ol class="carousel-indicators ">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 col-lg-12">
-                <button type="button" class="btn btn-secondary btn-md active">See Our Work</button>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-12 extra-spacing"></div>
-            </div>
 
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 90px;">
+            <div class="col-md-12 col-lg-12">
+              <button type="button" id="btn-onoff" class="btn btn-secondary btn-md active">On/Off</button>
+            </div>
+            <!-- <div class="col-sm-12 col-md-12 col-lg-12 extra-spacing"></div> -->
           </div>
         </div>
       </header>
@@ -163,148 +175,345 @@
                   Exercitation deserunt ad mollit commodo minim pariatur ipsum officia anim ut.</p>
               </div>
 
-              <div class=" col-sm-12 col-md-6 col-lg-3 ">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent0.png`)}" class="full-image" alt="" />
-                  <div class="text-content full-image">
-                    <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
-                    <p class="text-content--position">201 Views</p>
-                    <p class="text-content--position">95 Likes</p>
-                    <p class="text-content--position">10 Comments</p>
+              <div class="col-sm-12 col-md-6 col-lg-9">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4" style="margin-bottom: 30px;">
+                    <div class="img--hoovered">
+                      <img src="${require(`assets/img-recent0.png`)}" class="full-image" alt="" />
+                      <span class="text-content full-image">
+
+                                    <div>
+                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+                                    </div>
+
+                                    <div style="position: absolute; bottom: 0px; width: 100%">
+                                        <div style="width: 30%; display: inline-block; text-align: left;">
+                                            <span style="display: block">
+                                                201
+                                            </span>
+                      <span style="display: block">
+                                                Views
+                                            </span>
+                    </div>
+
+                    <div style="width: 30%; display: inline-block; text-align: left;">
+                      <span style="display: block">
+                                                95
+                                            </span>
+                      <span style="display: block">
+                                                Likes
+                                            </span>
+                    </div>
+
+                    <div style="width: 30%; display: inline-block; text-align: left;">
+                      <span style="display: block">
+                                                10
+                                            </span>
+                      <span style="display: block">
+                                                Comments
+                                            </span>
+                    </div>
+                    <!--<span class="text-content--position">201 Views</span>
+        <span class="text-content--position">95 Likes</span>
+        <span class="text-content--position">10 Comments</span>-->
                   </div>
+
+                  </span>
                 </div>
               </div>
 
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-md-down">
+              <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-md-down" style="margin-bottom: 30px;">
                 <div class="img--hoovered">
                   <img src="${require(`assets/img-recent1.png`)}" class="full-image " alt="" />
                   <span class="text-content full-image">
-                    <img src="${require(`assets/loupe.png`)}" class="--position" />
-                    <p class="text-content--position">201 Views</p> 
-                    <p class="text-content--position">95 Likes</p> 
-                    <p class="text-content--position">10 Comments</p> 
-                  </span>
+
+                                    <div>
+                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+                                    </div>
+
+                                    <div style="position: absolute; bottom: 0px; width: 100%">
+                                        <div style="width: 30%; display: inline-block; text-align: left;">
+                                            <span style="display: block">
+                                                201
+                                            </span>
+                  <span style="display: block">
+                                                Views
+                                            </span>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent2.png`)}" class="full-image" alt="" />
-                  <span class="text-content full-image">
-                    <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
-                    <p class="text-content--position">201 Views</p> 
-                    <p class="text-content--position">95 Likes</p> 
-                    <p class="text-content--position">10 Comments</p> 
-                  </span>
+
+                <div style="width: 30%; display: inline-block; text-align: left;">
+                  <span style="display: block">
+                                                95
+                                            </span>
+                  <span style="display: block">
+                                                Likes
+                                            </span>
                 </div>
+
+                <div style="width: 30%; display: inline-block; text-align: left;">
+                  <span style="display: block">
+                                                10
+                                            </span>
+                  <span style="display: block">
+                                                Comments
+                                            </span>
+                </div>
+                <!--<span class="text-content--position">201 Views</span>
+                                        <span class="text-content--position">95 Likes</span>
+                                        <span class="text-content--position">10 Comments</span>-->
               </div>
 
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-md-down"></div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent4.png`)}" class="full-image " alt="" />
-                  <span class="text-content full-image">
-                    <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
-                    <p class="text-content--position">201 Views</p> 
-                    <p class="text-content--position">95 Likes</p> 
-                    <p class="text-content--position">10 Comments</p> 
-                  </span>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent3.png`)}" class="full-image" alt="" />
-                  <span class="text-content full-image">
-                    <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
-                    <p class="text-content--position">201 Views</p> 
-                    <p class="text-content--position">95 Likes</p> 
-                    <p class="text-content--position">10 Comments</p> 
-                  </span>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent5.png`)}" class="full-image" alt="" />
-                  <span class="text-content full-image">
-                    <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
-                    <p class="text-content--position">201 Views</p> 
-                    <p class="text-content--position">95 Likes</p> 
-                    <p class="text-content--position">10 Comments</p> 
-                  </span>
-                </div>
-              </div>
+              </span>
             </div>
-          </section>
         </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 text-center" style="margin-bottom: 30px;">
+          <div class="img--hoovered">
+            <img src="${require(`assets/img-recent2.png`)}" class="full-image" alt="" />
+            <span class="text-content full-image">
+                                    <div>
+                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+                                    </div>
+
+                                    <div style="position: absolute; bottom: 0px; width: 100%">
+                                        <div style="width: 30%; display: inline-block; text-align: left;">
+                                            <span style="display: block">
+                                                201
+                                            </span>
+            <span style="display: block">
+                                                Views
+                                            </span>
+          </div>
+
+          <div style="width: 30%; display: inline-block; text-align: left;">
+            <span style="display: block">
+                                                95
+                                            </span>
+            <span style="display: block">
+                                                Likes
+                                            </span>
+          </div>
+
+          <div style="width: 30%; display: inline-block; text-align: left;">
+            <span style="display: block">
+                                                10
+                                            </span>
+            <span style="display: block">
+                                                Comments
+                                            </span>
+          </div>
+          <!--<span class="text-content--position">201 Views</span>
+        <span class="text-content--position">95 Likes</span>
+        <span class="text-content--position">10 Comments</span>-->
+        </div>
+        </span>
     </div>
-    <!-- section 3 - About, Recent Posts, Widgets -->
-    <section>
-      <div class="container background background__main">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <h5 class="header--footer">About Portfolio</h5>
-            <div class="line--solid"></div>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet
-              laborum ipsum. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet
-              laborum ipsum. </p>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <h5>Recent Posts</h5>
-            <div class="line--solid"></div>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet
-              laborum ipsum. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
-          </div>
-
-          <div class="col-md-6 col-lg-3 hidden-sm-down">
-            <h5>Twitter Widget</h5>
-            <div class="line--solid"></div>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet
-              laborum ipsum. </p>
-            <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm-down">
-            <h5>Flickr Widget</h5>
-            <div class="line--solid"></div>
-            <div class="text-center widget__image">
-              <img src="${require(`assets/rect.png`)}" alt="" />
-              <img src="${require(`assets/rect.png`)}" alt="" />
-              <img src="${require(`assets/rect.png`)}" alt="" />
-              <img src="${require(`assets/rect.png`)}" alt="" />
-            </div>
-            <div class="text-center widget__image">
-              <img src="${require(`assets/rect.png`)}" alt="" />
-              <img src="${require(`assets/rect.png`)}" alt="" />
-              <img src="${require(`assets/rect.png`)}" alt="" />
-              <img src="${require(`assets/rect.png`)}" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    </main>
-
-
-    <!--footer -->
-    <footer class="">
-      <div class="container background__main footer__background--color">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-2 logo--align--sm">
-            <img src="${require(`assets/logo.png`)}" alt="logo">
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-5 logo--align--sm">
-            <p>Fugiat ex voluptate occaecat sit culpa cupidatat. Esse esse voluptate consectetur irure magna mollit.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 text-center" style="margin-bottom: 30px;">
+      <div class="img--hoovered">
+        <img src="${require(`assets/img-recent4.png`)}" class="full-image " alt="" />
+        <span class="text-content full-image">
+                                    <div>
+                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+                                    </div>
+
+                                    <div style="position: absolute; bottom: 0px; width: 100%">
+                                        <div style="width: 30%; display: inline-block; text-align: left;">
+                                            <span style="display: block">
+                                                201
+                                            </span>
+        <span style="display: block">
+                                                Views
+                                            </span>
+      </div>
+
+      <div style="width: 30%; display: inline-block; text-align: left;">
+        <span style="display: block">
+                                                95
+                                            </span>
+        <span style="display: block">
+                                                Likes
+                                            </span>
+      </div>
+
+      <div style="width: 30%; display: inline-block; text-align: left;">
+        <span style="display: block">
+                                                10
+                                            </span>
+        <span style="display: block">
+                                                Comments
+                                            </span>
+      </div>
+      <!--<span class="text-content--position">201 Views</span>
+        <span class="text-content--position">95 Likes</span>
+        <span class="text-content--position">10 Comments</span>-->
+    </div>
+
+    </span>
+  </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-sm-down" style="margin-bottom: 30px;">
+    <div class="img--hoovered">
+      <img src="${require(`assets/img-recent3.png`)}" class="full-image" alt="" />
+      <span class="text-content full-image">
+
+                                    <div>
+                                        <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+                                    </div>
+
+                                    <div style="position: absolute; bottom: 0px; width: 100%">
+                                        <div style="width: 30%; display: inline-block; text-align: left;">
+                                            <span style="display: block">
+                                                201
+                                            </span>
+      <span style="display: block">
+                                                Views
+                                            </span>
+    </div>
+
+    <div style="width: 30%; display: inline-block; text-align: left;">
+      <span style="display: block">
+                                                95
+                                            </span>
+      <span style="display: block">
+                                                Likes
+                                            </span>
+    </div>
+
+    <div style="width: 30%; display: inline-block; text-align: left;">
+      <span style="display: block">
+                                                10
+                                            </span>
+      <span style="display: block">
+                                                Comments
+                                            </span>
+    </div>
+    <!--<span class="text-content--position">201 Views</span>
+        <span class="text-content--position">95 Likes</span>
+        <span class="text-content--position">10 Comments</span>-->
+  </div>
+
+  </span>
+  </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-4 text-center hidden-sm-down" style="margin-bottom: 30px;">
+    <div class="img--hoovered">
+      <img src="${require(`assets/img-recent5.png`)}" class="full-image" alt="" />
+      <span class="text-content full-image">
+        <div>
+          <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" style="left: 0;margin: auto;    top: 0;    bottom: 0;    right: 0;    position: absolute;" />
+              </div>
+         <div style="position: absolute; bottom: 0px; width: 100%">
+      <div style="width: 30%; display: inline-block; text-align: left;">
+      <span style="display: block">201
+      </span>
+      <span style="display: block">Views</span>
+    </div>
+    <div style="width: 30%; display: inline-block; text-align: left;">
+      <span style="display: block"> 95</span>
+      <span style="display: block">Likes</span>
+    </div>
+    <div style="width: 30%; display: inline-block; text-align: left;">
+      <span style="display: block">10</span>
+      <span style="display: block"> Comments</span>
+    </div>
+  </div>
+
+  </span>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  </div>
+
+  </section>
+  </div>
+  </div>
+  <!-- section 3 - About, Recent Posts, Widgets -->
+  <section>
+    <div class="container background background__main">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h5 class="header--footer">About Portfolio</h5>
+          <div class="line--solid"></div>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet laborum
+            ipsum. </p>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet laborum
+            ipsum. </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h5>Recent Posts</h5>
+          <div class="line--solid"></div>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet laborum
+            ipsum. </p>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
+        </div>
+
+        <div class="col-md-6 col-lg-3 hidden-sm-down">
+          <h5>Twitter Widget</h5>
+          <div class="line--solid"></div>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. Proident cillum labore ea sint pariatur irure amet laborum
+            ipsum. </p>
+          <p>Nisi anim consectetur ut magna eu ullamco deserunt ea ea. </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm-down">
+          <h5>Flickr Widget</h5>
+          <div class="line--solid"></div>
+          <div class="text-center widget__image">
+            <img src="${require(`assets/rect.png`)}" alt="" />
+            <img src="${require(`assets/rect.png`)}" alt="" />
+            <img src="${require(`assets/rect.png`)}" alt="" />
+            <img src="${require(`assets/rect.png`)}" alt="" />
+          </div>
+          <div class="text-center widget__image">
+            <img src="${require(`assets/rect.png`)}" alt="" />
+            <img src="${require(`assets/rect.png`)}" alt="" />
+            <img src="${require(`assets/rect.png`)}" alt="" />
+            <img src="${require(`assets/rect.png`)}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  </main>
+  <!--footer -->
+  <footer class="">
+    <div class="container background__main footer__background--color">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-2 logo--align--sm">
+          <img src="${require(`assets/logo.png`)}" alt="logo">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 logo--align--sm">
+          <p>Fugiat ex voluptate occaecat sit culpa cupidatat. Esse esse voluptate consectetur irure magna mollit.</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </footer>
+  </div>
+<!-- nie dziala -->
+  <script src="/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+  <script>
+
+    $('#btn-onoff').on('click', function () {
+      $('#carouselExampleIndicators').carousel('pause');
+      
+    });
+  </script>
 </body>
 
 </html>
