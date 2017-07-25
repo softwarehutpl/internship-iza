@@ -66,7 +66,7 @@
             <div class="col-sm-12 offset-md-4 col-md-8 col-lg-6 offset-lg-0">
               <div class="row">
                 <div class="col-lg-12">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" interval: 2000>
                     <div class="carousel-inner main-photo" role="listbox">
                       <div class="carousel-item active">
                         <img src="${require(`assets/slider-image.png`)}" class="d-block img-fluid" alt="First slide">
@@ -150,23 +150,24 @@
           </section>
 
           <!-- Recent work  & Pictures of recent work -->
-          <section>
+          <section class="recent-work">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12">
                 <h3>Recent work</h3>
                 <div class="stripe"></div>
               </div>
             </div>
-            <!-- Pictures on hoover First row-->
+            <!-- Pictures on hoover-->
             <div class="row">
               <div class="col-sm-12 col-md-6 col-lg-3 my-2">
                 <p class="full-image">Ut velit laborum fugiat aliqua. Consectetur fugiat velit duis enim ex id. Non ex aliquip aute incididunt
                   veniam eu amet laboris anim sit. Sint excepteur sunt id proident ullamco ipsum dolore reprehenderit ea.
                   Exercitation deserunt ad mollit commodo minim pariatur ipsum officia anim ut.</p>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 pictures__wrapper my-2">
+               <!--  Girl -->
+              <div class="col-sm-12 col-md-6 col-lg-3 pictures__wrapper my-2 mb-3">
                 <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent0.png`)}" class="full-image " alt="" />
+                  <img src="${require(`assets/img-recent0.png`)}" class="full-image" alt="" />
                   <div class="text-content full-image">
                     <div>
                       <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
@@ -188,14 +189,40 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-md-down pictures__wrapper my-2">
+                <!-- Gun -->
+              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-md-down pictures__wrapper my-2 mb-3">
                 <div class="img--hoovered">
                   <img src="${require(`assets/img-recent1.png`)}" class="full-image" alt="" />
                   <div class="text-content full-image">
                     <div>
                       <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
                     </div>
+                    <div class="pictures__wrapper__item">
+                      <div class="pictures__wrapper__item__text">
+                        <div class="pictures__wrapper__item__text--details"> 201 </div>
+                        <div class="pictures__wrapper__item__text--details"> Views </div>
+                      </div>
+                      <div class="pictures__wrapper__item__text">
+                        <div class="pictures__wrapper__item__text--details"> 95 </div>
+                        <div class="pictures__wrapper__item__text--details"> Likes</div>
+                      </div>
+                      <div class="pictures__wrapper__item__text">
+                        <div class="pictures__wrapper__item__text--details"> 10 </div>
+                        <div class="pictures__wrapper__item__text--details"> Comments</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- colorful mix -->
+              <div class="col-sm-12 col-md-6 col-lg-3 text-center pictures__wrapper my-2 mb-3">
+                <div class="img--hoovered">
+                  <img src="${require(`assets/img-recent2.png`)}" class="full-image" alt="" />
+                  <div class="text-content full-image">
+                    <div>
+                      <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
+                    </div>
 
                     <div class="pictures__wrapper__item">
                       <div class="pictures__wrapper__item__text">
@@ -214,32 +241,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center pictures__wrapper my-2">
-                <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent2.png`)}" class="full-image" alt="" />
-                  <div class="text-content full-image">
-                    <div>
-                      <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
-                    </div>
-                    <div class="pictures__wrapper__item">
-                      <div class="pictures__wrapper__item__text">
-                        <div class="pictures__wrapper__item__text--details"> 201 </div>
-                        <div class="pictures__wrapper__item__text--details"> Views </div>
-                      </div>
-                      <div class="pictures__wrapper__item__text">
-                        <div class="pictures__wrapper__item__text--details"> 95 </div>
-                        <div class="pictures__wrapper__item__text--details"> Likes</div>
-                      </div>
-                      <div class="pictures__wrapper__item__text">
-                        <div class="pictures__wrapper__item__text--details"> 10 </div>
-                        <div class="pictures__wrapper__item__text--details"> Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- planes -->
               <div class="col-sm-12 col-md-6 col-lg-3 hidden-md-down"></div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center pictures__wrapper mt-2 mb-5">
+              <div class="col-sm-12 col-md-6 col-lg-3 text-center pictures__wrapper mt-2 mb-3">
                 <div class="img--hoovered ">
                   <img src="${require(`assets/img-recent4.png`)}" class="full-image" alt="" />
                   <div class="text-content full-image">
@@ -263,9 +267,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down pictures__wrapper mt-2 mb-5">
+              <!-- house and giraffes -->
+              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down pictures__wrapper mt-2 mb-3">
                 <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent3.png`)}" class="full-image " alt="" />
+                  <img src="${require(`assets/img-recent3.png`)}" class="full-image" alt="" />
                   <div class="text-content full-image">
                     <div>
                       <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
@@ -287,9 +292,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down pictures__wrapper mb-5">
+              <!-- trees -->
+              <div class="col-sm-12 col-md-6 col-lg-3 text-center hidden-sm-down pictures__wrapper mt-2 mb-3">
                 <div class="img--hoovered">
-                  <img src="${require(`assets/img-recent5.png`)}" class="full-image mt-2" alt="" />
+                  <img src="${require(`assets/img-recent5.png`)}" class="full-image" alt="" />
                   <div class="text-content full-image">
                     <div>
                       <img src="${require(`assets/loupe.png`)}" class="img__loupe--position" />
@@ -315,6 +321,7 @@
           </section>
         </div>
     </div>
+      
     <!-- section 3 - About, Recent Posts, Widgets -->
     <section>
       <div class="container background background__main">

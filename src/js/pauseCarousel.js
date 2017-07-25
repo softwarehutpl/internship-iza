@@ -7,6 +7,10 @@
     });
 });
 */
+$('.carousel').carousel({
+  interval: 1000
+});
+
 var flag = 0;
 var indicators = $('#carouselExampleIndicators');
 $('#btn-onoff').on('click', function() {

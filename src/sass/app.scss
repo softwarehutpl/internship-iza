@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import "~bootstrap/scss/bootstrap.scss";
+
+/******** Main options ********/
+
 body {
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -11,6 +14,7 @@ h1 {
     margin-bottom: 25px;
     font-weight: bold;
 }
+
 h3 {
     font-size: 15px;
     font-weight: bold;
@@ -22,6 +26,10 @@ p {
     margin-bottom: 17px;
     line-height: 17px;
     margin-top: 0;
+}
+
+a {
+    color: #000000;
 }
 
 .background {
@@ -37,6 +45,9 @@ p {
     }
 }
 
+
+/******** logo, nav and search *********/
+
 .btn-secondary--custom {
     font-weight: bold;
     color: #ffffff;
@@ -44,22 +55,11 @@ p {
     border: 1px solid #989899;
     width: 100px;
 }
-.tail {
-    border: 1px solid #c0c0c0;
-    border-bottom: 0px;
-}
 
-.stripe {
-    height: 12px;
-    background: repeating-linear-gradient( -50deg, #cecece, #cecece 2px, #fff 2px, #fff 5px);
-    &--tails {
-        width: 90%;
-        margin-bottom: 10px;
-    }
-}
 .hamburger__button {
     top: -40px;
 }
+
 .line {
     &--solid {
         border-top: 1px solid #808080;
@@ -74,7 +74,6 @@ p {
     color: #ffffff;
     padding: 15px;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
-    ;
 }
 
 .nav-link--color:active {
@@ -99,56 +98,46 @@ p {
     background-repeat: no-repeat;
 }
 
-.widget {
-    &__image {
-        margin: 7px;
-    }
-}
+/******* Recent work  & Pictures of recent work ********/
 
-
-.footer {
-    &__background--color {
-        opacity: 0.3;
-    }
-}
 .pictures__wrapper {
     margin-bottom: 0px;
     &__item {
-        position: absolute; 
-        bottom: 0px; 
+        position: absolute;
+        bottom: 0px;
         width: 100%;
         &__text {
-        width: 30%; 
-        display: inline-block; 
-        text-align: left;
-       &--details {
-            display: block;
+            width: 30%;
+            display: inline-block;
+            text-align: left;
+            &--details {
+                display: block;
             }
         }
     }
 }
+
 .img {
     &--hoovered {
         position: relative;
         width: 100%;
         height: 100%;
-        
     }
 }
+
 .img__loupe--position {
-            left: 0;
-            margin: auto;    
-            top: 0;    
-            bottom: 0;   
-            right: 0;    
-            position: absolute;
-        }
+    left: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
 
 div.text-content {
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     cursor: pointer;
-    display: table;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -166,22 +155,50 @@ div.text-content {
     height: auto;
 }
 
+/**** section 3 - About, Recent Posts, Widgets *****/
 
-/*********** Media queries ************/ 
+.widget {
+    &__image {
+        margin: 7px;
+    }
+}
+
+/***** Footer *****/
+.footer {
+    &__background--color {
+        opacity: 0.3;
+    }
+}
+
+
+
+/*********** Media queries ************/
 
 @include media-breakpoint-up(xs) {
+    .nav-link--color {
+        padding: 0;
+    }
+    .nav-link--color:active {
+        padding: 0px 2px 2px 2px;
+    }
+    main {
+        max-width: 320px;
+        margin: 0 auto;
+    }
     .main-photo {
         position: absolute;
         opacity: 0.2;
         margin-top: -200px;
-        margin-left:20px;
-               
-    } 
+        margin-left: 20px;
+    }
     .extra-spacing {
         margin-bottom: 50px;
     }
     .tail {
+        border: 1px solid #c0c0c0;
+        box-shadow: 2px 10px 20px -10px rgba(0, 0, 0, 0.75);
         margin-top: -32px;
+        padding: 20px;
         &--sm {
             margin-top: 30px;
         }
@@ -191,15 +208,39 @@ div.text-content {
     }
     .carousel-indicators {
         visibility: hidden;
-    }   
+    }
+    .stripe {
+        height: 7px;
+        background: repeating-linear-gradient( -50deg, #cecece, #cecece 2px, #fff 2px, #fff 5px);
+        &--tails {
+            width: 60%;
+            margin-bottom: 10px;
+        }
+    }
+    div.text-content {
+        font-size: 1.5rem;
+    }
+    .recent-work {
+        margin-top: 44px;
+    }
 }
 
 @include media-breakpoint-up(md) {
+    .nav-link--color {
+        padding: 15px;
+    }
+    .nav-link--color:active {
+        padding: 12px 20px 12px 20px;
+    }
+    main {
+        max-width: 715px;
+        margin: 0 auto;
+    }
     .main-photo {
         position: relative;
         margin-top: 0px;
         right: 50px;
-        opacity: 1;   
+        opacity: 1;
     }
     .extra-spacing {
         height: 102px;
@@ -218,27 +259,55 @@ div.text-content {
         justify-content: flex-end;
         visibility: visible;
         margin: 0;
-    } 
+    }
+    .stripe {
+        height: 7px;
+        background: repeating-linear-gradient( -50deg, #cecece, #cecece 2px, #fff 2px, #fff 5px);
+        left: 25px;
+        right: 30x;
+        &--tails {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+    }
+    div.text-content {
+        font-size: 1rem;
+    }
+    .recent-work {
+        margin-top: 68px;
+    }
 }
 
 @include media-breakpoint-up(lg) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .main-photo {
         position: relative;
         margin-top: 20px;
         opacity: 1;
         width: 100%;
-        
     }
     .extra-spacing {
         height: 76px;
     }
     .tail {
+        border: 1px solid #c0c0c0;
+        border-bottom: 0px;
+        box-shadow: 0px -9px 13px -2px rgba(47, 47, 47, 0.7);
         margin-top: -60px;
         flex: 0 0 23%;
         max-width: 25%;
     }
-     .carousel-indicators {
+    .carousel-indicators {
         position: absolute;
         visibility: visible;
-    } 
-} 
+    }
+    div.text-content {
+        font-size: 0.9rem;
+    }
+    .recent-work {
+        margin-top: 80px;
+    }
+}
