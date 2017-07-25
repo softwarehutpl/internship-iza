@@ -11,15 +11,15 @@ $('.carousel').carousel({
   interval: 1000
 });
 
-var flag = 0;
+var i = 0;
 var indicators = $('#carouselExampleIndicators');
 $('#btn-onoff').on('click', function() {
 
-    if(flag == 0) {
+    if(i == 0) {
         indicators.carousel('pause'); /* off carousel */
-        flag++;
+        i++;
     } else {
         indicators.carousel('cycle'); /* on carousel */
-        flag--;
+        i--;
     }
 });
